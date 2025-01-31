@@ -1,4 +1,5 @@
 import { IconContext } from '@react-icons/all-files'
+import { Analytics } from '@vercel/analytics/next'
 import Document, { Head, Html, Main, NextScript } from 'next/document'
 
 export default class MyDocument extends Document {
@@ -62,6 +63,8 @@ export default class MyDocument extends Document {
             <Main />
 
             <NextScript />
+
+            <Analytics />
           </body>
         </Html>
       </IconContext.Provider>
