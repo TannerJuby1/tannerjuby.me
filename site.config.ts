@@ -54,11 +54,11 @@ export default siteConfig({
   navigationLinks: [
     {
       title: 'Blog',
-      pageId: '18bce5cd674080c084e3f2cc0ed32e29'
+      pageId: '18fce5cd674080c5b3eaf8b7bd63b85e'
     },
     {
-      title: 'Recipes',
-      pageId: 'b614dbfc6240404da7a0ec9c88d85837'
+      title: 'Juby Cookbook',
+      pageId: '18fce5cd67408091ae06f3afb3fcc73d'
     }
   ]
 })
