@@ -53,11 +53,15 @@ export default siteConfig({
   navigationStyle: 'custom',
   navigationLinks: [
     {
+      title: 'CV/Resume',
+      pageId: '18fce5cd674080e6a1b0ca8232a5e341'
+    },
+    {
       title: 'Blog',
       pageId: '18fce5cd674080c5b3eaf8b7bd63b85e'
     },
     {
-      title: 'Juby Cookbook',
+      title: 'Cookbook',
       pageId: '18fce5cd67408091ae06f3afb3fcc73d'
     }
   ]
