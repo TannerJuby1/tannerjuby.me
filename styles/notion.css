@@ -38,6 +38,10 @@
   margin-bottom: 1em;
 }
 
+.notion-asset-wrapper-image {
+  flex-direction: row
+}
+
 .notion-asset-wrapper-video > div,
 .notion-asset-wrapper-video video {
   width: 100% !important;
