@@ -39,7 +39,7 @@
 }
 
 .notion-asset-wrapper-image {
-  flex-direction: row
+  flex-direction: row;
 }
 
 .notion-asset-wrapper-video > div,
@@ -408,6 +408,6 @@
   color: var(--fg-color-2);
 }
 
-.notion-equation.notion-equation-block{
+.notion-equation.notion-equation-block {
   align-items: center;
 }
