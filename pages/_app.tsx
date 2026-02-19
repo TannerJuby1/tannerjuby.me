@@ -18,7 +18,7 @@ import { Analytics } from '@vercel/analytics/next'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import * as Fathom from 'fathom-client'
 import { useRouter } from 'next/router'
-import posthog from 'posthog-js'
+import { posthog } from 'posthog-js'
 import * as React from 'react'
 
 import { bootstrap } from '@/lib/bootstrap-client'
