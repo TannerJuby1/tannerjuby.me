@@ -1,4 +1,13 @@
 export default {
+  async redirects() {
+    return [
+      {
+        source: '/blog',
+        destination: '/portfolio',
+        permanent: true
+      }
+    ]
+  },
   staticPageGenerationTimeout: 300,
   images: {
     remotePatterns: [
