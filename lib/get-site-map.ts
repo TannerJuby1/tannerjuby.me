@@ -1,3 +1,4 @@
+import ExpiryMap from 'expiry-map'
 import {
   getAllPagesInSpace,
   getBlockValue,
@@ -27,13 +28,15 @@ export async function getSiteMap(): Promise<types.SiteMap> {
 }
 
 const getAllPages = pMemoize(getAllPagesImpl, {
-  cacheKey: (...args) => JSON.stringify(args)
+  cacheKey: (args) => JSON.stringify(args),
+  // Bound discovery staleness without crawling every page on each ISR refresh.
+  cache: new ExpiryMap(60_000)
 })
 
 const getPage = async (pageId: string, opts?: any) => {
   console.log('\nnotion getPage', uuidToId(pageId))
   return notion.getPage(pageId, {
-    kyOptions: {
+    ofetchOptions: {
       timeout: 30_000
     },
     ...opts
