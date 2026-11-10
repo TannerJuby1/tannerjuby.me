@@ -13,8 +13,8 @@ interface DynamicPageProps {
 }
 
 export const revalidate = 10
-// Allow Notion's rate-limit cooldown and page discovery to finish during ISR.
-export const maxDuration = 300
+// Use the maximum duration allowed by the Vercel Hobby plan.
+export const maxDuration = 60
 export const dynamicParams = true
 
 export async function generateStaticParams() {

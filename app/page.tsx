@@ -5,8 +5,8 @@ import { getPageData } from '@/lib/get-page-data'
 import { createPageMetadata } from '@/lib/page-metadata'
 
 export const revalidate = 10
-// Notion's rate-limit retries can wait more than a minute before succeeding.
-export const maxDuration = 300
+// Use the maximum duration allowed by the Vercel Hobby plan.
+export const maxDuration = 60
 
 export async function generateMetadata(): Promise<Metadata> {
   return createPageMetadata(await getPageData())
